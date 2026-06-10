@@ -1,48 +1,365 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paginas De formularios</title>    
+<meta charset="UTF-8">
+<title>MODIFICACION DE ALUMNOS</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#0033CC;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    width:1000px;
+    margin:20px auto;
+    background:white;
+    border:2px solid black;
+}
+
+h1{
+    margin:0;
+    padding:15px;
+    text-align:center;
+    background:#0033CC;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    border:1px solid #ccc;
+    padding:5px;
+}
+
+.label{
+    width:300px;
+    font-weight:bold;
+    text-align:right;
+    background:#f0f0f0;
+}
+
+input,select{
+    width:100%;
+    padding:4px;
+    box-sizing:border-box;
+}
+
+.small{
+    width:70px;
+}
+
+.fila{
+    display:flex;
+    gap:5px;
+}
+
+</style>
 </head>
+
 <body>
-    <h1>Formulario de contacto</h1>
-    <form action="submit_form.php" method="post">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name">
-        <br>
-        <br>
-        <!-- <campo para validar la url "> -->
-          <label for="url">Sitio web:</label>
-          <input type="url" id="url" name="url">
-          <br>
-          <br>
-          <!-- <campo para validar el correo electrónico "> -->
-          <label for="email">Correo Universitario:</label>
-          <input type="email" id="email" name="email">
-          <br>
-          <br>
-          <!-- <campo para validar la contrasena "> -->
-          <label for="password">Contraseña:</label>
-          <input type="password" id="password" name="password">
-          <br>
-          <br>
-          <hr>
-<button>Enviar</button>
-    </form>
+
+<div class="container">
+
+<h1>MODIFICACION DE ALUMNOS</h1>
+
+<table>
+
+<tr>
+<td class="label">Apellido Paterno</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td class="label">Apellido Materno</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td class="label">Nombre del Alumno</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td class="label">ID. Carrera</td>
+<td>
+<div class="fila">
+<input class="small" value="">
+<select>
+<option>ING. TECNOLOGÍAS DE LA INFORMACIÓN</option>
+<option>ING. EN SISTEMAS COMPUTACIONALES</option>
+<option>ING. EN SOFTWARE</option>
+<option>ING. EN TECNOLOGÍAS DE LA INFORMACIÓN Y COMUNICACIONES</option>
+<optgroup label="LICENCIATURAS">
+<option>LIC. EN ADMINISTRACIÓN DE EMPRESAS</option> 
+<option>LIC. EN CONTADURÍA PÚBLICA</option>
+<option>LIC. EN DERECHO</option>
+<option>LIC. EN PSICOLOGÍA</option>
+</select>
+</div>
+</td>
+</tr>
+<tr>
+<td class="label">tipo de sistema</td>   
+<td>
+<select>
+<option>MATUTINO</option>
+<option>SABATINO</option>
+<option>NOCTURNO</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td class="label">Teléfono</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td class="label">Celular</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td class="label">Email</td>
+<td><input type="email"></td>
+</tr>
+
+<tr>
+<td class="label">Dirección</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td class="label">Colonia</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td class="label">Municipio</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td class="label">Código Postal</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td class="label">Estado</td>
+<td>
+<select>
+
+<option>Aguascalientes</option>
+<option>Baja California</option>
+<option>Baja California Sur</option>
+<option>Campeche</option>
+<option>Chiapas</option>
+<option>Chihuahua</option>
+<option>Ciudad de México</option>
+<option>Coahuila</option>
+<option>Colima</option>
+<option>Durango</option>
+<option>Estado de México</option>
+<option>Guanajuato</option>
+<option>Guerrero</option>
+<option>Hidalgo</option>
+<option>Jalisco</option>
+<option>Michoacán</option>
+<option>Morelos</option>
+<option>Nayarit</option>
+<option>Nuevo León</option>
+<option>Oaxaca</option>
+<option>Puebla</option>
+<option>Querétaro</option>
+<option>Quintana Roo</option>
+<option>San Luis Potosí</option>
+<option>Sinaloa</option>
+<option>Sonora</option>
+<option>Tabasco</option>
+<option>Tamaulipas</option>
+<option>Tlaxcala</option>
+<option>Veracruz</option>
+<option>Yucatán</option>
+<option>Zacatecas</option>
+
+</select>
+</td>
+</tr>
+
+<tr>
+<td class="label">Sexo</td>
+<td>
+<select>
+<option>Masculino</option>
+<option>Femenino</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td class="label">Estado Civil</td>
+<td>
+<select>
+<option>Soltero</option>
+<option>Casado</option>
+<option>Divorciado</option>
+<option>Viudo</option>
+</select>
+</td>
+</tr>
+
+<tr>
+    <td class="label azul">ID.Empresa</td>
+    <td>
+        <div class="fila">
+            <input type="text" class="small" value="1">
+            <select>
+                <option>NINGUNO</option>
+                <option>EMPRESA 1</option>
+                <option>EMPRESA 2</option>
+                <option>EMPRESA 3</option>
+            </select>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td class="label">Ext.Empresa</td>
+    <td>
+        <input type="text" class="small">
+    </td>
+</tr>
+
+<tr>
+    <td class="label">F.Nac (d/m/a)</td>
+    <td>
+        <input type="text" style="width:100px;">
+    </td>
+</tr>
+
+<tr>
+    <td class="label">F.Ing (d/m/a)</td>
+    <td>
+        <input type="text" style="width:100px;">
+    </td>
+</tr>
+
+<tr>
+    <td class="label">Tetra</td>
+    <td>
+        <input type="text" class="small" value="">
+    </td>
+</tr>
+
+<tr>
+    <td class="label">status</td>
+    <td>
+        <input type="text" class="small" value="0">
+    </td>
+</tr>
+
+<tr>
+    <td class="label">ESEXTRANJERO</td>
+    <td>
+        <input type="text" class="small" value="N">
+    </td>
+</tr>
+
+<tr>
+    <td class="label">Escuela de Procedencia</td>
+    <td>
+        <div class="fila">
+            <input type="text" value="LA SALLE ST" style="width:200px;">
+            <select>
+                <option>eduardo espino</option>
+            </select>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td class="label">Estado donde Estudio Preparatoria</td>
+    <td>
+        <div class="fila">
+            <input type="text" class="small" value="">
+
+            <select>
+                <option>Aguascalientes</option>
+                <option>Baja California</option>
+                <option>Baja California Sur</option>
+                <option>Campeche</option>
+                <option>Chiapas</option>
+                <option>Chihuahua</option>
+                <option>Ciudad de México</option>
+                <option>Coahuila</option>
+                <option>Colima</option>
+                <option>Durango</option>
+                <option>Estado de México</option>
+                <option>Guanajuato</option>
+                <option>Guerrero</option>
+                <option>Hidalgo</option>
+                <option>Jalisco</option>
+                <option>Michoacán</option>
+                <option>Morelos</option>
+                <option>Nayarit</option>
+                <option>Nuevo León</option>
+                <option>Oaxaca</option>
+                <option>Puebla</option>
+                <option>Querétaro</option>
+                <option>Quintana Roo</option>
+                <option>San Luis Potosí</option>
+                <option>Sinaloa</option>
+                <option>Sonora</option>
+                <option>Tabasco</option>
+                <option>Tamaulipas</option>
+                <option>Tlaxcala</option>
+                <option>Veracruz</option>
+                <option>Yucatán</option>
+                <option>Zacatecas</option>
+            </select>
+        </div>
+    </td>
+</tr>
+
+<tr>
+<td class="label">CURP</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td class="label">Empresa</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td class="label">Fecha de Nacimiento</td>
+<td><input type="date"></td>
+</tr>
+
+<tr>
+<td class="label">Fecha de Ingreso</td>
+<td><input type="date"></td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align:center;padding:15px;">
+<button>Guardar</button>
+<button>Cancelar</button>
+<button>Buscar</button>
+</td>
+</tr>
+
+</table>
+
+</div>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
