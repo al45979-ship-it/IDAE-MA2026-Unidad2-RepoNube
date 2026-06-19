@@ -1,354 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paginas De formularios</title>    
-<meta charset="UTF-8">
-<title>MODIFICACION DE ALUMNOS</title>
-
-<style>
-
-body{
-    margin:0;
-    background:#0033CC;
-    font-family:Arial, sans-serif;
-}
-
-.container{
-    width:1000px;
-    margin:20px auto;
-    background:white;
-    border:2px solid black;
-}
-
-h1{
-    margin:0;
-    padding:15px;
-    text-align:center;
-    background:#0033CC;
-    color:white;
-    font-size:28px;
-    font-weight:bold;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-}
-
-td{
-    border:1px solid #ccc;
-    padding:5px;
-}
-
-.label{
-    width:300px;
-    font-weight:bold;
-    text-align:right;
-    background:#f0f0f0;
-}
-
-input,select{
-    width:100%;
-    padding:4px;
-    box-sizing:border-box;
-}
-
-.small{
-    width:70px;
-}
-
-.fila{
-    display:flex;
-    gap:5px;
-}
-
-</style>
-
-<div class="container">
-
-<h1>MODIFICACION DE ALUMNOS</h1>
-
-<table>
-
+<title>pagina alquila car</title>
+</head>
+<body bgcolor="white">
+<table width="1300" align="center" border="0" cellpadding="10" bgcolor="grey">
 <tr>
-<td class="label">Apellido Paterno</td>
-<td><input type="text"></td>
-</tr>
-
-<tr>
-<td class="label">Apellido Materno</td>
-<td><input type="text"></td>
-</tr>
-
-<tr>
-<td class="label">Nombre del Alumno</td>
-<td><input type="text"></td>
-</tr>
-
-<tr>
-<td class="label">ID. Carrera</td>
-<td>
-<div class="fila">
-<input class="small" value="">
-<select>
-<option>ING. TECNOLOGÍAS DE LA INFORMACIÓN</option>
-<option>ING. EN SISTEMAS COMPUTACIONALES</option>
-<option>ING. EN SOFTWARE</option>
-<option>ING. EN TECNOLOGÍAS DE LA INFORMACIÓN Y COMUNICACIONES</option>
-<optgroup label="LICENCIATURAS">
-<option>LIC. EN ADMINISTRACIÓN DE EMPRESAS</option> 
-<option>LIC. EN CONTADURÍA PÚBLICA</option>
-<option>LIC. EN DERECHO</option>
-<option>LIC. EN PSICOLOGÍA</option>
+<!-- COLUMNA 1 -->
+<td width="400" valign="top">
+<img src="marca.png" width="250"><br>
+<font color="white" face="Arial" size="6"><b>ALQUILA CAR</b></font>
+<br><br>
+<table width="100%" bgcolor="white"><tr><td align="center">
+<b>RENTA DE AUTOS DE LUJO</b>
+</td></tr></table>
+<font color="white" face="Arial" size="4"><b>DATOS DEL CLIENTE</b></font>
+<hr color="white">
+<font color="white" face="Arial">
+NOMBRE: <input type="text" name="nombre"><br><br>
+DIRECCION: <input type="text" name="direccion"><br><br>
+TELEFONO: <input type="text" name="telefono"><br><br>
+EMAIL: <input type="text" name="email"><br><br>
+<hr color="white">
+FECHA DE RENTA :
+<select name="dia">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
 </select>
-</div>
-</td>
-</tr>
-<tr>
-<td class="label">tipo de sistema</td>   
-<td>
-<select>
-<option>MATUTINO</option>
-<option>SABATINO</option>
-<option>NOCTURNO</option>
+<select name="mes">
+<option>ENERO</option>
+<option>FEBRERO</option>
+<option>MARZO</option>
 </select>
+2026
+<br><br>
+NUMERO DE DIAS: <input type="text" name="dias" size="5">
+</font>
 </td>
-</tr>
-
+<!-- COLUMNA 2 -->
+<td width="450" valign="top">
+<font color="white" face="Arial" size="5"><b>MARCA DE PREFERENCIA</b></font>
+<hr color="white">
+<font color="white" face="Arial" size="3">
+<input type="radio" name="marca"> Mercedes Benz<br>
+<input type="radio" name="marca"> BMW<br>
+<input type="radio" name="marca"> PORSCHE<br>
+<input type="radio" name="marca"> Audi<br>
+<input type="radio" name="marca"> INFINITI<br>
+</font>
+<br><br>
+<table border="0" cellpadding="15">
 <tr>
-<td class="label">Teléfono</td>
-<td><input type="text"></td>
+<td align="center"><img src="mercedes.png" width="80"><br><font color="white">Mercedes-Benz</font></td>
+<td align="center"><img src="bmw.png" width="80"></td>
+<td align="center"><img src="porsche.png" width="80"><br><font color="white">PORSCHE</font></td>
 </tr>
-
 <tr>
-<td class="label">Celular</td>
-<td><input type="text"></td>
+<td align="center"><img src="audi.png" width="80"></td>
+<td align="center"><img src="infiniti.png" width="80"><br><font color="white">INFINITI</font></td>
+<td></td>
 </tr>
-
-<tr>
-<td class="label">Email</td>
-<td><input type="email"></td>
-</tr>
-
-<tr>
-<td class="label">Dirección</td>
-<td><input type="text"></td>
-</tr>
-
-<tr>
-<td class="label">Colonia</td>
-<td><input type="text"></td>
-</tr>
-
-<tr>
-<td class="label">Municipio</td>
-<td><input type="text"></td>
-</tr>
-
-<tr>
-<td class="label">Código Postal</td>
-<td><input type="text"></td>
-</tr>
-
-<tr>
-<td class="label">Estado</td>
-<td>
-<select>
-
-<option>Aguascalientes</option>
-<option>Baja California</option>
-<option>Baja California Sur</option>
-<option>Campeche</option>
-<option>Chiapas</option>
-<option>Chihuahua</option>
-<option>Ciudad de México</option>
-<option>Coahuila</option>
-<option>Colima</option>
-<option>Durango</option>
-<option>Estado de México</option>
-<option>Guanajuato</option>
-<option>Guerrero</option>
-<option>Hidalgo</option>
-<option>Jalisco</option>
-<option>Michoacán</option>
-<option>Morelos</option>
-<option>Nayarit</option>
-<option>Nuevo León</option>
-<option>Oaxaca</option>
-<option>Puebla</option>
-<option>Querétaro</option>
-<option>Quintana Roo</option>
-<option>San Luis Potosí</option>
-<option>Sinaloa</option>
-<option>Sonora</option>
-<option>Tabasco</option>
-<option>Tamaulipas</option>
-<option>Tlaxcala</option>
-<option>Veracruz</option>
-<option>Yucatán</option>
-<option>Zacatecas</option>
-
-</select>
-</td>
-</tr>
-
-<tr>
-<td class="label">Sexo</td>
-<td>
-<select>
-<option>Masculino</option>
-<option>Femenino</option>
-</select>
-</td>
-</tr>
-
-<tr>
-<td class="label">Estado Civil</td>
-<td>
-<select>
-<option>Soltero</option>
-<option>Casado</option>
-<option>Divorciado</option>
-<option>Viudo</option>
-</select>
-</td>
-</tr>
-
-<tr>
-    <td class="label azul">ID.Empresa</td>
-    <td>
-        <div class="fila">
-            <input type="text" class="small" value="1">
-            <select>
-                <option>NINGUNO</option>
-                <option>EMPRESA 1</option>
-                <option>EMPRESA 2</option>
-                <option>EMPRESA 3</option>
-            </select>
-        </div>
-    </td>
-</tr>
-
-<tr>
-    <td class="label">Ext.Empresa</td>
-    <td>
-        <input type="text" class="small">
-    </td>
-</tr>
-
-<tr>
-    <td class="label">F.Nac (d/m/a)</td>
-    <td>
-        <input type="text" style="width:100px;">
-    </td>
-</tr>
-
-<tr>
-    <td class="label">F.Ing (d/m/a)</td>
-    <td>
-        <input type="text" style="width:100px;">
-    </td>
-</tr>
-
-<tr>
-    <td class="label">Tetra</td>
-    <td>
-        <input type="text" class="small" value="">
-    </td>
-</tr>
-
-<tr>
-    <td class="label">status</td>
-    <td>
-        <input type="text" class="small" value="0">
-    </td>
-</tr>
-
-<tr>
-    <td class="label">ESEXTRANJERO</td>
-    <td>
-        <input type="text" class="small" value="N">
-    </td>
-</tr>
-
-<tr>
-    <td class="label">Estado donde Estudio Preparatoria</td>
-    <td>
-        <div class="fila">
-            <input type="text" class="small" value="">
-
-            <select>
-                <option>Aguascalientes</option>
-                <option>Baja California</option>
-                <option>Baja California Sur</option>
-                <option>Campeche</option>
-                <option>Chiapas</option>
-                <option>Chihuahua</option>
-                <option>Ciudad de México</option>
-                <option>Coahuila</option>
-                <option>Colima</option>
-                <option>Durango</option>
-                <option>Estado de México</option>
-                <option>Guanajuato</option>
-                <option>Guerrero</option>
-                <option>Hidalgo</option>
-                <option>Jalisco</option>
-                <option>Michoacán</option>
-                <option>Morelos</option>
-                <option>Nayarit</option>
-                <option>Nuevo León</option>
-                <option>Oaxaca</option>
-                <option>Puebla</option>
-                <option>Querétaro</option>
-                <option>Quintana Roo</option>
-                <option>San Luis Potosí</option>
-                <option>Sinaloa</option>
-                <option>Sonora</option>
-                <option>Tabasco</option>
-                <option>Tamaulipas</option>
-                <option>Tlaxcala</option>
-                <option>Veracruz</option>
-                <option>Yucatán</option>
-                <option>Zacatecas</option>
-            </select>
-        </div>
-    </td>
-</tr>
-
-<tr>
-<td class="label">CURP</td>
-<td><input type="text"></td>
-</tr>
-
-<tr>
-<td class="label">Empresa</td>
-<td><input type="text"></td>
-</tr>
-
-<tr>
-<td class="label">Fecha de Nacimiento</td>
-<td><input type="date"></td>
-</tr>
-
-<tr>
-<td class="label">Fecha de Ingreso</td>
-<td><input type="date"></td>
-</tr>
-
-<tr>
-<td colspan="2" style="text-align:center;padding:15px;">
-<button>Guardar</button>
-<button>Cancelar</button>
-<button>Buscar</button>
-</td>
-</tr>
-
 </table>
-
-</div>
+</td>
+<!-- COLUMNA 3 -->
+<td width="450" valign="top">
+<font color="white" face="Arial" size="5"><b>MODELO</b></font>
+<hr color="white">
+<font color="white" face="Arial" size="3">
+<input type="radio" name="modelo"> Sedan<br>
+<input type="radio" name="modelo"> Deportivo<br>
+<input type="radio" name="modelo"> SUV<br>
+<input type="radio" name="modelo"> Familiar<br>
+</font>
+<br>
+<font color="white" face="Arial" size="5"><b>SERVICIOS EXTRA</b></font><br>
+<font color="white" face="Arial" size="2">
+La renta del auto puede estar acompañado de servicios extras:.
+</font>
+<br><br>
+<font color="white" face="Arial" size="3">
+<input type="checkbox" name="extra"> Contratacion de chofer all day<br>
+<input type="checkbox" name="extra"> Traslado Hotel/Aeropuerto<br>
+<input type="checkbox" name="extra"> Kilometraje libre<br>
+<input type="checkbox" name="extra"> Auto Electrico<br>
+<input type="checkbox" name="extra"> Esterilizacion diaria nocturna<br>
+<input type="checkbox" name="extra"> Internet Wifi In Car<br>
+</font>
+<br><br>
+<input type="button" value="Hacer tu reservacion" onclick="alert('Reservación enviada')">
+</td>
+</tr>
+</table>
+<br>
+<center>
+<font face="Arial" size="3">
+Pagina elaborada por: HECTOR URIBE<br>
+<b>Todos los derechos reservados</b>
+</font>
+</center>
 
 </body>
 </html>
